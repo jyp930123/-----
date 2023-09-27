@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name=" apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta
+      name="description"
+      data-lang="meta.description"
+      content="너와 내가 만나는 메타버스 세상 'ifland'(이프랜드)에서 이야기를 나누고, 'Jump'(점프)에서 AR로 내 눈앞에 스타를 소환하고 사진도 다채롭게 찍어보세요! SK텔레콤이 만든 초실감 미디어 플랫폼이 함께합니다.  "
+    />
+    <meta name="keywords" data-lang="meta.keywords" content="SKT 5GX" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      data-lang="meta.newtitle.ifland"
+      content="매일매일 메타버스 집들이"
+    />
+    <meta
+      property="og:description"
+      data-lang="meta.description"
+      content="너와 내가 만나는 메타버스 세상 'ifland'(이프랜드)에서 이야기를 나누고, 'Jump'(점프)에서 AR로 내 눈앞에 스타를 소환하고 사진도 다채롭게 찍어보세요! SK텔레콤이 만든 초실감 미디어 플랫폼이 함께합니다.  "
+    />
+    <meta
+      property="og:site_name"
+      data-lang="meta.newtitle.ifland"
+      content="매일매일 메타버스 집들이"
+    />
+    <meta
+      property="og:image"
+      content="https://ifland.io/img/common/logo_ifland_210706.png"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      data-lang="meta.newtitle.ifland"
+      content="매일매일 메타버스 집들이"
+    />
+    <meta
+      name="twitter:description"
+      data-lang="meta.description"
+      content="너와 내가 만나는 메타버스 세상 'ifland'(이프랜드)에서 이야기를 나누고, 'Jump'(점프)에서 AR로 내 눈앞에 스타를 소환하고 사진도 다채롭게 찍어보세요! SK텔레콤이 만든 초실감 미디어 플랫폼이 함께합니다.  "
+    />
+    <meta name="twitter:url" content="www.ifland.io" />
+    <meta
+      name="twitter:image"
+      content="https://ifland.io/img/common/logo_ifland_210706.png"
+    />
+    <link rel="shortcut icon" href="https://ifland.io/img/common/favicon.ico" />
+    <link rel="shortcut icon" href="https://ifland.io/img/common/favicon.png" />
+
+    <meta
+      name="naver-site-verification"
+      content="3f4f5c71dd75a35a0fd889a0d5f3e0dc6c7dc243"
+    />
+    <title data-lang="meta.newtitle.ifland">매일매일 메타버스 집들이</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/reset.min.css" />
+    <link rel="stylesheet" href="/css/gnb.min.css" />
+    <link rel="stylesheet" href="/css/virtual_meetup.min.css" />
+    <link rel="stylesheet" href="/css/calendar.min.css" />
+
+    <script type="text/javascript" src="/js/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/lib/swiper.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/globaljump.js"></script>
+
+    <!-- 트래커 스크립트 -->
+    <script src="https://xtr.tos.sktelecom.com/js/xtractor_script.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NFKRV6H");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body data-index="0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NFKRV6H"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main id="wrap" class="wrap ifland">
+      <!-- #gnb -->
+      <div id="gnb" class="gnb-white gnb-main" data-name="common"></div>
+      <!-- #gnb -->
+
+      <section class="container">
+        <figure class="header-movie">
+          <header class="header-tit">
+            <p><span data-lang="ifland.visual.logo">(이프랜드)</span></p>
+            <h2 data-lang="ifland.visual.title">
+              너와 내가 만나는 메타버스, <br />매일매일 메타버스 집들이
+            </h2>
+            <div class="header-tit-btn">
+              <!-- <a class="btn-popup-open ifland-hidden-desktop" data-name="moive-link" data-popup="popupAappDownIflandMobile" id="globalVrDownLinkMobile" href="#" title="">앱 다운로드</a> -->
+              <a
+                class="hidden-desktop"
+                data-name="moive-link"
+                id="globalVrDownLinkMobile"
+                href="https://app.ifland.ai/globalpoc"
+                target="_blank"
+                title="앱 다운로드 버튼"
+                data-lang="ifland.visual.appdownload"
+                >앱 다운로드</a
+              >
+              <a
+                class="btn-popup-open hidden-mobile"
+                data-name="moive-link"
+                data-popup="popupAappDownIfland"
+                id="globalVrDownLink"
+                href="#"
+                title=""
+                data-lang="ifland.visual.appdownload"
+                >앱 다운로드</a
+              >
+            </div>
+            <ul class="sns-btn">
+              <li class="facebook">
+                <a
+                  href="https://www.facebook.com/ifland-107732611558150"
+                  target="_blank"
+                  >facebook</a
+                >
+              </li>
+              <li class="instagram">
+                <a href="https://www.instagram.com/ifland.kr/" target="_blank"
+                  >instagram</a
+                >
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/ifland_Official" target="_blank"
+                  >twitter</a
+                >
+              </li>
+              <li class="youtube">
+                <a
+                  href="https://www.youtube.com/channel/UC7uZ-3sAlkteiY9bfXRZ8bg/featured"
+                  target="_blank"
+                  >youtube</a
+                >
+              </li>
+              <li class="tiktok">
+                <a
+                  href="https://www.tiktok.com/@ifland_official"
+                  target="_blank"
+                  >tiktok</a
+                >
+              </li>
+            </ul>
+          </header>
+          <video
+            class="video-main"
+            preload="none"
+            data-video="ifland"
+            poster="/movie/thumnail/ifland_desktop1.png"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="/movie/ifland_desktop1.mp4" type="video/mp4" />
+          </video>
+        </figure>
+
+        <!-- floating btn -->
+        <div class="floating-wrap">
+          <figure class="floating">
+            <a
+              class="btn appdown hidden-desktop"
+              data-name="floating-link"
+              id="globalVrDownLinkMobile"
+              href="https://app.ifland.ai/globalpoc"
+              target="_blank"
+              title=""
+              ><img src="/img/common/floating_btn_ko.png"
+            /></a>
+            <a
+              class="btn-popup-open hidden-mobile"
+              data-name="floating-link"
+              data-popup="popupAappDownIfland"
+              id="globalVrDownLink"
+              href="#"
+              title=""
+              ><img src="/img/common/floating_btn_ko.png"
+            /></a>
+          </figure>
+        </div>
+        <!-- 210721 추가 - 홍보배너 -->
+        <section class="banner-swiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a target="_blank" title="~23.10.31 씨릴즈"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20221206_132846_c6f85715-3720-4473-9141-2d922504a304.jpg"
+                    alt="~23.10.31 씨릴즈"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/writer_han_groo/"
+                  target="_blank"
+                  title="8/24 17시 한그루작가"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230816_111450_eaeaf980-968d-4f97-86d4-a29ad9b4ee65.png"
+                    alt="8/24 17시 한그루작가"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/word._.berry/"
+                  target="_blank"
+                  title="8/24 20시 워드베리"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_102746_28c494aa-898f-42cc-bd5f-2bbfd0c07393.png"
+                    alt="8/24 20시 워드베리"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/ellieclass0/"
+                  target="_blank"
+                  title="8/24 21시 엘리클래스(Ellie)"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230818_090423_40c2b3c8-ceeb-4475-9162-393793c50c65.jpg"
+                    alt="8/24 21시 엘리클래스(Ellie)"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/if_kyoissaem/"
+                  target="_blank"
+                  title="8/25 14시 쿄이쌤 이프랜Day"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230824_170651_cb447d13-2134-4c3d-8940-2fcb295c5bef.png"
+                    alt="8/25 14시 쿄이쌤 이프랜Day"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/hyomssam/"
+                  target="_blank"
+                  title="8/26 20시 횸쌤"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_102937_822b6feb-5185-4dbe-a939-7ea9026f2c9e.png"
+                    alt="8/26 20시 횸쌤"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/ellieclass0/"
+                  target="_blank"
+                  title="8/26 23시 엘리클래스"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230818_150343_c8d99263-ebe3-48b5-b801-539e5e879349.png"
+                    alt="8/26 23시 엘리클래스"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/yeonji08/"
+                  target="_blank"
+                  title="8/27 21시 연지쌤@yeonji08	"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230818_091228_58deaa97-a469-4aa3-b92a-3ba92711a019.png"
+                    alt="8/27 21시 연지쌤@yeonji08	"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/life_blender_/"
+                  target="_blank"
+                  title="8/28 15시 라이프블랜더"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_125614_13f5f5d6-8dd0-4ba6-8edd-daba837cb8ef.png"
+                    alt="8/28 15시 라이프블랜더"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/master_ruzzi/"
+                  target="_blank"
+                  title="8/28 22시 민루찌"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_133020_14d2b237-9128-4660-96c8-9dea9a5902d2.png"
+                    alt="8/28 22시 민루찌"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/greensky1717/"
+                  target="_blank"
+                  title="8/29 10시 신공언니 Ms.G"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_133243_f02822a5-7d56-4fbe-b429-879c7c98a82a.png"
+                    alt="8/29 10시 신공언니 Ms.G"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/operasta1/"
+                  target="_blank"
+                  title="8/29 11시 문화생활"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_133320_6ac35ebf-1f69-4d26-b39e-bf957d4438ef.png"
+                    alt="8/29 11시 문화생활"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/if.legitbricks/"
+                  target="_blank"
+                  title="8/29 20시 LegitBricks"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_133406_ad93d8e0-a7d8-49dd-8435-c1a1798666b2.png"
+                    alt="8/29 20시 LegitBricks"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/badahae_note/"
+                  target="_blank"
+                  title="8/29 2230 바다해"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230821_133452_9f808e9f-be4d-4403-810e-d37cce538a8f.png"
+                    alt="8/29 2230 바다해"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="banner-link"
+                  href="https://www.instagram.com/ifland_1/"
+                  target="_blank"
+                  title="8/30 21시 홍춘이"
+                  ><img
+                    src="https://jumpstudio.s3.ap-northeast-2.amazonaws.com/partner/20230824_104035_6c5ff16e-8d2c-41d4-9e07-a364a2bbf164.png"
+                    alt="8/30 21시 홍춘이"
+                /></a>
+              </div>
+            </div>
+            <!-- swiper-button -->
+            <div class="swiper-button-next ifland-hidden-mobile"></div>
+            <div class="swiper-button-prev ifland-hidden-mobile"></div>
+          </div>
+        </section>
+
+        <div class="btn-wrap calendar-btn">
+          <button
+            type="button"
+            class="btn-popup-open"
+            data-popup="popupCalendar"
+            title="예정된 인기 모임 탐색하기"
+            data-lang="ifland.calendar.btn"
+          >
+            예정된 인기 모임 탐색하기<i class="arrow"></i>
+          </button>
+        </div>
+
+        <!-- if home -->
+        <section class="ifhome">
+          <div class="ifhome-con1">
+            <header class="content-header">
+              <div class="label">
+                <img src="/img/virtual_meetup/main/ifhomelogo.png" alt="" />
+              </div>
+              <p class="content-tit" data-lang="ifland.content17.title">
+                꾸미고, 배치하고, 이프홈에서 나만의 공간을 만들어보세요!
+              </p>
+              <div class="btn-wrap btn-movie">
+                <a
+                  href="ifriends_tutorial"
+                  class="btn-movie-link"
+                  data-lang="ifland.content17.moviebtn"
+                  >이프홈 튜토리얼 보기</a
+                >
+                <i class="arrow"></i>
+              </div>
+            </header>
+            <figure class="ifhome-img mt 10">
+              <img src="/img/virtual_meetup/main/ifhome_con1.png" title="" />
+            </figure>
+          </div>
+
+          <div class="ifhome-con2">
+            <header class="content-header">
+              <p class="content-txt" data-lang="ifland.content18.title">
+                모던하게, 시크하게, 내추럴하게 아니면 아이돌처럼 귀엽게!
+              </p>
+              <p class="content-txt" data-lang="ifland.content18.txt">
+                <span class="point-color">나의 이프홈을 꾸밀 수 있어요.</span>
+              </p>
+            </header>
+            <figure class="ifhome-img">
+              <img src="/img/virtual_meetup/main/ifhome_con2.png" title="" />
+            </figure>
+          </div>
+
+          <div class="ifhome-con3">
+            <header class="content-header">
+              <p class="content-txt" data-lang="ifland.content19.title">
+                <span class="point-color"
+                  >이모티콘을 사용하여 감정표현과 꾸미기가 가능해요.</span
+                >
+              </p>
+              <p class="content-txt" data-lang="ifland.content19.txt">
+                나를 표현하고 기록을 남겨보세요.
+              </p>
+            </header>
+            <figure class="ifhome-img">
+              <img src="/img/virtual_meetup/main/ifhome_con3_ko.png" title="" />
+            </figure>
+          </div>
+
+          <div class="ifhome-con4">
+            <header class="content-header">
+              <p class="content-txt" data-lang="ifland.content20.title">
+                마치 미술관에 온 것 같아요!
+              </p>
+              <p class="content-txt" data-lang="ifland.content20.txt">
+                <span class="point-color">
+                  다른 사람이 만든 이프홈도 구경하고 나의 게시물도 친구들에게
+                  자랑해 보세요.
+                </span>
+              </p>
+            </header>
+            <figure class="ifhome-img">
+              <img src="/img/virtual_meetup/main/ifhome_con4.png" title="" />
+            </figure>
+          </div>
+
+          <div class="ifhome-con5">
+            <header class="content-header">
+              <p class="content-txt" data-lang="ifland.content21.title">
+                안녕 만나서 반가워~<br />
+                패션 너무 예쁘다! 직접 만든 거야?
+              </p>
+              <p class="content-txt" data-lang="ifland.content21.txt">
+                <span class="point-color"
+                  >이프홈에서 즐거운 스몰톡도 나눠보세요!</span
+                >
+              </p>
+            </header>
+            <figure class="ifhome-img">
+              <img src="/img/virtual_meetup/main/ifhome_con5.png" title="" />
+            </figure>
+          </div>
+        </section>
+
+        <!--home-->
+        <section class="home">
+          <div class="home-con1">
+            <header class="content-header">
+              <div class="label">
+                <img src="/img/virtual_meetup/main/ifsquarelogo.png" alt="" />
+              </div>
+              <h3 class="content-tit" data-lang="ifland.content16.title">
+                글로벌 친구들을 만나보세요!
+              </h3>
+              <p class="content-txt" data-lang="ifland.content16.txt">
+                이제 <span class="point-color">다양한 나라의 유저들</span>과도
+                만날수 있어요
+              </p>
+              <figure class="home-calendar-img">
+                <img src="/img/virtual_meetup/main/home_icon7_ko.png" alt="" />
+              </figure>
+            </header>
+            <figure class="home-con1-img">
+              <img src="/img/virtual_meetup/main/home_icon1.png" alt="" />
+              <img src="/img/virtual_meetup/main/home_icon2.png" alt="" />
+              <img src="/img/virtual_meetup/main/home_icon3.png" alt="" />
+              <img src="/img/virtual_meetup/main/home_icon4.png" alt="" />
+              <img src="/img/virtual_meetup/main/home_icon5.png" alt="" />
+              <img src="/img/virtual_meetup/main/home_icon6.png" alt="" />
+            </figure>
+          </div>
+
+          <div class="home-con2">
+            <header class="content-header">
+              <h3 class="content-tit" data-lang="ifland.content1.title">
+                내 이프미와 함께<br />
+                다양한 모임을 한눈에
+              </h3>
+              <p class="content-txt" data-lang="ifland.content1.txt">
+                다른 <span class="point-color">이프미(아바타)</span>와 반갑게
+                인사하고, 실시간으로<br class="ifland-hidden-mobile" />
+                개설된 다양한 주제의 콘텐츠와 프로그램 즐겨보기!
+              </p>
+              <p
+                class="content-txt ifland-hidden-mobile"
+                data-lang="ifland.content1.subtxt"
+              >
+                참여하고 싶은 모임을 누르면 <br class="ifland-hidden-desktop" />
+                <span class="point-color">알림 등록</span>을 할 수 있어요.<br
+                  class="ifland-hidden-desktop"
+                /><br class="ifland-hidden-mobile" />등록하면 시작 10분 전에
+                미리 알려 드려요
+              </p>
+            </header>
+            <figure class="home-con2-swiper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/home_swiper_img2_ko.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/home_swiper_img3_ko.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/home_swiper_img1_ko.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- swiper-button -->
+                <div class="swiper-button-next ifland-hidden-mobile"></div>
+                <div class="swiper-button-prev ifland-hidden-mobile"></div>
+              </div>
+            </figure>
+            <p
+              class="content-txt ifland-hidden-desktop"
+              data-lang="ifland.content1.subtxt"
+            >
+              참여하고 싶은 모임을 누르면 <br class="ifland-hidden-desktop" />
+              <span class="point-color">알림 등록</span>을 할 수 있어요.<br
+                class="ifland-hidden-desktop"
+              /><br class="ifland-hidden-mobile" />등록하면 시작 10분 전에 미리
+              알려 드려요
+            </p>
+          </div>
+        </section>
+
+        <!-- myroom -->
+        <section class="myroom">
+          <header class="content-header">
+            <div class="label">
+              <p class="label-txt" data-lang="ifland.content2.label">마이룸</p>
+            </div>
+            <h3 class="content-tit" data-lang="ifland.content2.title">
+              나만의 부캐를 <br />
+              멋지게 꾸며보세요!
+            </h3>
+          </header>
+
+          <figure class="myroom-swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="video-bg">
+                    <video
+                      preload="none"
+                      data-video="jumpvr"
+                      poster="/movie/thumnail/avatar_01_211201.jpg"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="/movie/avatar_01_211201.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-bg">
+                    <video
+                      preload="none"
+                      data-video="jumpvr"
+                      poster="/movie/thumnail/avatar_02_211201.jpg"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="/movie/avatar_02_211201.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-bg">
+                    <video
+                      preload="none"
+                      data-video="jumpvr"
+                      poster="/movie/thumnail/avatar_03_211201.jpg"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="/movie/avatar_03_211201.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-bg">
+                    <video
+                      class="video-sm"
+                      preload="none"
+                      data-video="jumpvr"
+                      poster="/movie/thumnail/avatar_04_211201.jpg"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="/movie/avatar_04_211201.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-bg">
+                    <video
+                      preload="none"
+                      data-video="jumpvr"
+                      poster="/movie/thumnail/avatar_05_211201.jpg"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="/movie/avatar_05_211201.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-bg">
+                    <video
+                      preload="none"
+                      data-video="jumpvr"
+                      poster="/movie/thumnail/avatar_06_211201.jpg"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="/movie/avatar_06_211201.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-bg">
+                    <video
+                      preload="none"
+                      data-video="jumpvr"
+                      poster="/movie/thumnail/avatar_07_211201.jpg"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="/movie/avatar_07_211201.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <div class="myroom-btn">
+            <div class="btn-wrap btn-avatar">
+              <button
+                type="button"
+                data-popup="popupAvatar"
+                class="btn-popup-open btn-avatar-link"
+                data-lang="ifland.content2.avatarbtn"
+              >
+                이프미 더보기<i class="arrow"></i>
+              </button>
+            </div>
+            <p class="content-txt" data-lang="ifland.content2.txt">
+              <span class="point-color"
+                >다양한 얼굴형, 헤어스타일, 의상, 액세서리</span
+              >
+              등으로 <br />
+              가상 현실 속에서 또 다른 나로 변신!
+            </p>
+          </div>
+        </section>
+
+        <!-- direct-message -->
+        <section class="direct-message">
+          <header class="content-header">
+            <div class="label">
+              <p class="label-txt" data-lang="ifland.content11.label">
+                1:1 메시지
+              </p>
+            </div>
+            <h3 class="content-tit" data-lang="ifland.content11.title">
+              1:1 메시지를 보내 보세요.
+            </h3>
+            <p
+              class="content-txt ifland-hidden-mobile"
+              data-lang="ifland.content11.txt"
+            >
+              <span class="point-color">1:1 메시지 기능</span>이
+              추가되었어요!<br />
+              다른 유저에게 지금 메시지를 보내보세요.
+            </p>
+          </header>
+          <figure class="direct-message-img">
+            <img
+              src="/img/virtual_meetup/main/one_on_one_ko.png"
+              title="brand identity logo"
+            />
+          </figure>
+          <p
+            class="content-txt ifland-hidden-desktop"
+            data-lang="ifland.content11.txt"
+          >
+            <span class="point-color">1:1 메시지 기능</span>이 추가되었어요!<br />
+            다른 유저에게 지금 메시지를 보내보세요.
+          </p>
+        </section>
+
+        <!-- meetup -->
+        <section class="meetup">
+          <!-- content1 -->
+          <div class="meetup-con1">
+            <header class="content-header">
+              <div class="label">
+                <p class="label-txt" data-lang="ifland.content12.label">
+                  메타버스 모임
+                </p>
+              </div>
+              <h3 class="content-tit" data-lang="ifland.content12.title">
+                내 표정을 따라하는 이프미로<br />
+                더욱 실감나게 발표해 보세요.
+              </h3>
+              <p
+                class="content-txt ifland-hidden-mobile"
+                data-lang="ifland.content12.txt"
+              >
+                <span class="point-color">내 표정을 따라 하는 ifme</span>를
+                실시간으로<br />
+                스크린에 공유해보세요!<br />
+                더욱 실감 나게 발표 할 수 있답니다.
+              </p>
+            </header>
+            <figure class="meetup-con1-img">
+              <img src="/img/virtual_meetup/main/metaverse_icon1.png" alt="" />
+              <img src="/img/virtual_meetup/main/metaverse_icon2.png" alt="" />
+              <img src="/img/virtual_meetup/main/metaverse_icon3.png" alt="" />
+              <img src="/img/virtual_meetup/main/metaverse_icon4.png" alt="" />
+            </figure>
+            <p
+              class="content-txt ifland-hidden-desktop"
+              data-lang="ifland.content12.txt"
+            >
+              <span class="point-color">내 표정을 따라 하는 ifme</span>를
+              실시간으로<br />
+              스크린에 공유해보세요!<br />
+              더욱 실감 나게 발표 할 수 있답니다.
+            </p>
+          </div>
+
+          <!-- content2 -->
+          <!--         <div class="meetup-con2"> 
+          <header class="content-header">
+            <h3 class="content-tit" data-lang="ifland.content13.title">
+              랜드에서 투표를<br class="ifland-hidden-mobile" />
+              만들 수 있어요.
+            </h3>
+            <p class="content-txt ifland-hidden-mobile" data-lang="ifland.content13.txt">
+              <span class="point-color">투표</span>를 열고 <span class="point-color">친구들의 의견</span>을 확인해보세요.
+            </p>
+          </header>
+          <figure class="meetup-con2-img">
+            <img src="/img/virtual_meetup/main/land_vote.png" title="brand identity logo" />
+          </figure>
+          <p class="content-txt ifland-hidden-desktop" data-lang="ifland.content13.txt">
+            <span class="point-color">투표</span>를 열고 <span class="point-color">친구들의 의견</span>을 확인해보세요.
+          </p>
+        </div> -->
+
+          <!-- content3 -->
+          <!--         <div class="meetup-con3"> 
+          <header class="content-header">
+            <h3 class="content-tit" data-lang="ifland.content14.title">
+              동영상을 녹화해 보세요.
+            </h3>
+            <p class="content-txt ifland-hidden-mobile" data-lang="ifland.content14.txt">
+              <span class="point-color">동영상을 녹화</span>하고 <span class="point-color">플레이영상을 공유</span>해보세요.
+            </p>
+          </header>
+          <figure class="meetup-con3-img">
+            <img src="/img/virtual_meetup/main/video-recording.png" title="brand identity logo" />
+          </figure>
+          <p class="content-txt ifland-hidden-desktop" data-lang="ifland.content14.txt">
+            <span class="point-color">동영상을 녹화</span>하고 <span class="point-color">플레이영상을 공유</span>해보세요.
+          </p>
+        </div> -->
+
+          <!-- content4 -->
+          <div class="meetup-con4">
+            <header class="content-header">
+              <h3 class="content-tit" data-lang="ifland.content3.title">
+                간편하게 메타버스 모임을<br />
+                만들고 즐겨 보세요.
+              </h3>
+              <p
+                class="content-txt ifland-hidden-mobile"
+                data-lang="ifland.content3.txt"
+              >
+                <span class="point-color"
+                  >제목만 입력해도 모임(이프스퀘어) 만들기 완료!</span
+                ><br />
+                공간과 배경을 고르고 대표 태그도 설정😀<br />
+                모임 참여 중에도 다른 모임을<br />
+                탐색하여 이동할 수 있어요.
+              </p>
+            </header>
+            <figure class="meetup-con4-img">
+              <img
+                class="img1"
+                src="/img/virtual_meetup/main/meetup_con1_img1_ko2.png"
+                alt=""
+              />
+              <video
+                class="img2 ko-only"
+                preload="none"
+                data-video="jumpvr"
+                poster="/movie/thumnail/meetup_con1_video.jpg"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                <source src="/movie/meetup_con1_video.mp4" type="video/mp4" />
+              </video>
+              <img
+                class="img2 en-only"
+                src="/img/virtual_meetup/main/meetup_con1_img_en.png"
+                alt=""
+              />
+            </figure>
+            <p
+              class="content-txt ifland-hidden-desktop"
+              data-lang="ifland.content3.txt"
+            >
+              <span class="point-color">
+                제목만 입력해도 모임 만들기 완료! </span
+              ><br />
+              공간과 배경을 고르고 대표 태그도 설정😀<br />
+              모임 참여 중에도 다른 모임을<br />
+              탐색하여 이동할 수 있어요.
+            </p>
+          </div>
+
+          <!-- content5 -->
+          <article class="meetup-con5">
+            <header class="content-header">
+              <h3 class="content-tit" data-lang="ifland.content4.title">
+                모임 주제에 맞는 <br />
+                실감 나는 공간을 느껴 보세요.
+              </h3>
+            </header>
+            <figure class="meetup5-swiper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img6.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img7.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con2_img8.png"
+                      alt=""
+                    />
+                  </div>
+                  <!-- <div class="swiper-slide"><img src="/img/virtual_meetup/main/meetup_con2_img9.png" alt="" />
+                </div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next ifland-hidden-mobile"></div>
+                <div class="swiper-button-prev ifland-hidden-mobile"></div>
+              </div>
+            </figure>
+            <p class="content-txt" data-lang="ifland.content4.txt">
+              루프탑, 캠핑장, 공원, 도서관, 집 등 <br />
+              <span class="point-color"
+                >소규모 친밀모임을 물론 대형 행사까지 <br />완전히 몰입할 수
+                있는 공간</span
+              >들을<br class="ifland-hidden-desktop" />
+              직접 설정해 보세요!
+            </p>
+          </article>
+
+          <!-- content6 -->
+          <article class="meetup-con6">
+            <header class="content-header">
+              <h3 class="content-tit" data-lang="ifland.content5.title">
+                원하는 자료를 공유하고, <br />
+                간편하게 제어할 수 있어요.
+              </h3>
+            </header>
+            <figure class="meetup6-swiper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con3_img1_ko.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/img/virtual_meetup/main/meetup_con3_img2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- swiper-button -->
+                <div class="swiper-button-next ifland-hidden-mobile"></div>
+                <div class="swiper-button-prev ifland-hidden-mobile"></div>
+              </div>
+            </figure>
+            <p class="content-txt" data-lang="ifland.content5.txt">
+              참여자들에게
+              <span class="point-color">PDF 파일과 영상 자료를 공유</span>
+              <br class="ifland-hidden-desktop" />
+              할 수 있어요. <br class="ifland-hidden-mobile" />
+              어떤 화면을 보고 있어도<br class="ifland-hidden-desktop" />
+              간편하게 페이지 이동 및 재생이 가능해요.
+            </p>
+          </article>
+
+          <!-- content7 -->
+          <article class="meetup-con7">
+            <header class="content-header">
+              <h3 class="content-tit" data-lang="ifland.content6.title">
+                내 감정을 마음껏 <br />
+                표현해 보세요.
+              </h3>
+              <p class="content-txt" data-lang="ifland.content6.txt">
+                <span class="point-color"
+                  >300여 개의 감정 표현 및 모션 리스트</span
+                >로 <br />
+                생동감 넘치는 커뮤니케이션을 해 보세요.<br />
+                하트와 박수를 누르면 더욱 분위기가 살아납니다.
+              </p>
+            </header>
+            <figure class="meetup7-img">
+              <img src="/img/virtual_meetup/main/meetup_con4_img1.png" alt="" />
+              <div class="meetup7-img-icon">
+                <img
+                  class="icon1"
+                  src="/img/virtual_meetup/main/meetup_con4_icon1.png"
+                  alt=""
+                />
+                <img
+                  class="icon2"
+                  src="/img/virtual_meetup/main/meetup_con4_icon2.png"
+                  alt=""
+                />
+                <img
+                  class="icon3"
+                  src="/img/virtual_meetup/main/meetup_con4_icon3.png"
+                  alt=""
+                />
+                <img
+                  class="icon4"
+                  src="/img/virtual_meetup/main/meetup_con4_icon4.png"
+                  alt=""
+                />
+                <img
+                  class="icon5"
+                  src="/img/virtual_meetup/main/meetup_con4_icon5.png"
+                  alt=""
+                />
+              </div>
+            </figure>
+          </article>
+        </section>
+
+        <!-- meetup-content -->
+        <section class="meetup-content">
+          <div class="meetup-content-con1">
+            <header class="content-header">
+              <div class="label">
+                <p class="label-txt">Content</p>
+              </div>
+              <h3 class="content-tit" data-lang="ifland.content7.title">
+                취향저격 콘텐츠만 <br />
+                쏙 골라서 열려요!
+              </h3>
+              <div class="rolling-content">
+                <div id="recommend" class="recommend">
+                  <div class="panel">
+                    <ul id="panel-ul">
+                      <li class="pane2-1" data-lang="ifland.content7.pane.1">
+                        이벤트/<br />
+                        콘퍼런스
+                      </li>
+                      <li class="pane2-2" data-lang="ifland.content7.pane.2">
+                        강연/세미나
+                      </li>
+                      <li class="pane2-3" data-lang="ifland.content7.pane.3">
+                        배틀/경연/<br />챌린지
+                      </li>
+                      <li class="pane2-4" data-lang="ifland.content7.pane.4">
+                        관심사 모임
+                      </li>
+                      <li class="pane2-5" data-lang="ifland.content7.pane.5">
+                        팬미팅
+                      </li>
+                      <li class="pane2-6" data-lang="ifland.content7.pane.6">
+                        이외<br />다양한 밋업
+                      </li>
+                      <li
+                        class="pane2-1 ifland-hidden-desktop"
+                        data-lang="ifland.content7.pane.1"
+                      >
+                        이벤트/<br />
+                        콘퍼런스
+                      </li>
+                      <li
+                        class="pane2-2 ifland-hidden-desktop"
+                        data-lang="ifland.content7.pane.2"
+                      >
+                        강연/세미나
+                      </li>
+                      <li
+                        class="pane2-3 ifland-hidden-desktop"
+                        data-lang="ifland.content7.pane.3"
+                      >
+                        배틀/경연/<br />챌린지
+                      </li>
+                      <li
+                        class="pane2-4 ifland-hidden-desktop"
+                        data-lang="ifland.content7.pane.4"
+                      >
+                        관심사 모임
+                      </li>
+                      <li
+                        class="pane2-5 ifland-hidden-desktop"
+                        data-lang="ifland.content7.pane.5"
+                      >
+                        팬미팅
+                      </li>
+                      <li
+                        class="pane2-6 ifland-hidden-desktop"
+                        data-lang="ifland.content7.pane.6"
+                      >
+                        이외<br />다양한 밋업
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <figure class="meetup-content-con1-img ifland-hidden-desktop">
+                <img
+                  src="/img/virtual_meetup/main/meetup_content_phone_en.png"
+                  alt=""
+                />
+              </figure>
+              <p class="content-txt" data-lang="ifland.content7.txt">
+                요즘 MZ세대의 관심사는 무엇이고, <br />
+                어떤 활동들을 하며 지낼까요?<br />
+                <span class="point-color"
+                  >다양한 관심사의 콘텐츠와 프로그램</span
+                >을 진행합니다.
+              </p>
+            </header>
+            <figure class="meetup-content-con1-img ifland-hidden-mobile">
+              <img
+                src="/img/virtual_meetup/main/meetup_content_phone_en.png"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <!--<div class="meetup-content-con2">
+          <header class="content-header">
+            <h3 class="content-tit" data-lang="ifland.content15.title">
+              아티스트가 내 눈앞에!
+            </h3>
+            <p class="content-txt ifland-hidden-mobile" data-lang="ifland.content15.txt">
+              <span class="point-color">볼류매트릭 콘서트</span>를 즐겨보세요.
+            </p>
+          </header>
+          <figure class="meetup-content-con2-img">
+            <img src="/img/virtual_meetup/main/volumetric-concert.png" title="brand identity logo" />
+          </figure>
+          <p class="content-txt ifland-hidden-desktop" data-lang="ifland.content15.txt">
+            <span class="point-color">볼류매트릭 콘서트</span>를 즐겨보세요.
+          </p>
+        </div>-->
+        </section>
+
+        <!-- Photo Moment -->
+        <!--       <section class="photo-moment">
+        <header class="content-header">
+          <div class="label">
+            <p class="label-txt">ifland moment</p>
+          </div>
+          <h3 class="content-tit" data-lang="ifland.content8.title">
+            찰칵! <br class="ifland-hidden-desktop" />
+            함께 사진 찍을까요?
+          </h3>
+          <p class="content-txt" data-lang="ifland.content8.txt">
+            사람들과 함께 포즈 잡고 버튼만 누르면 촬영 완료! <br class="ifland-hidden-mobile" /> <br class="ifland-hidden-desktop" />
+            내 프로필에 올려 추억을 쌓아 보세요.
+          </p>
+        </header>
+        <figure class="photo-moment-swiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" th:each="moment : ${momentList}">
+                <img th:src="@{${moment.thumbnailUrl}}" alt="">
+                <div class="swiper-txt">
+                  <p class="date" th:text="${moment.imgTime}"></p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next ifland-hidden-mobile"></div>
+            <div class="swiper-button-prev ifland-hidden-mobile"></div>
+          </div>
+        </figure>
+
+      </section>
+ -->
+        <!-- brand identity -->
+        <section class="brand-identity">
+          <header class="content-header">
+            <div class="label">
+              <p class="label-txt">Brand Identity</p>
+            </div>
+            <h3 class="content-tit" data-lang="ifland.content9.title">
+              매일매일 메타버스 집들이 ifland
+            </h3>
+            <p class="content-txt" data-lang="ifland.content9.txt">
+              누구든 될 수 있고, <br class="ifland-hidden-desktop" />
+              무엇이든 할 수 있고, <br />
+              언제든 만날 수 있고, <br class="ifland-hidden-desktop" />
+              어디든 갈 수 있는 곳!
+            </p>
+          </header>
+          <figure class="brand-identity-img">
+            <img
+              src="/img/virtual_meetup/main/brand_identity_logo.png"
+              title="brand identity logo"
+            />
+            <div class="btn-wrap">
+              <a
+                href="/img/virtual_meetup/main/download/ifland_logo.ai"
+                data-lang="ifland.content9.download.ai"
+                download
+                >AI 다운로드 <i class="arrow"></i
+              ></a>
+              <a
+                href="javascript:;"
+                onclick="downloadImg('/img/virtual_meetup/main/download/ifland_logo.png')"
+                data-lang="ifland.content9.download.png"
+                >PNG 다운로드 <i class="arrow"></i>
+              </a>
+            </div>
+          </figure>
+          <p class="content-txt" data-lang="ifland.content9.subtxt">
+            ifland (이프랜드)는 모든
+            <span class="point-color">if가 현실이 되는</span> <br />
+            새로운 세상이라는 의미에서 탄생하였습니다.
+          </p>
+        </section>
+
+        <!-- tutorial -->
+        <section class="tutorial">
+          <div class="tutorial-wrap">
+            <header class="content-header">
+              <h3 class="content-tit" data-lang="ifland.content10.title">
+                이용 방법이 궁금하다면?
+              </h3>
+            </header>
+            <div class="btn-wrap">
+              <a
+                href="helps_faq"
+                title="튜토리얼 보기"
+                data-lang="ifland.content10.btn"
+                >튜토리얼 보기</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- notice 
+      <section class="noti">
+        <header class="noti-header">
+          <h3 class="noti-header-tit" data-lang="ifland.noti.title">공지 사항</h3>
+          <div class="more-btn">
+            <a href="notice_vm" title="더보기" data-lang="ifland.noti.more">더 보기<i class="arrow"></i></a>
+          </div>
+        </header>
+        <div class="noti-content">
+          <a th:href="@{/notice_detail_vm(newsSeq=${notice.newsSeq})}" class="list-wrap" th:each="notice : ${noticeList}">
+            <dl class="list-area">
+              <dt class="list-tit" th:utext="${notice.subject}"></dt>
+              <dd class="list-category" data-lang="notice.detail.category">[공지]</dd>
+              <dd class="list-data" th:utext="${notice.viewdatetxt}"></dd>
+            </dl>
+          </a>
+        </div>
+      </section>
+-->
+        <!-- footer -->
+        <div id="iflandFooter"></div>
+
+        <div class="download-btn">
+          <a
+            class="hidden-desktop"
+            data-name="bottom-link"
+            id="globalVrDownLinkMobile"
+            href="https://app.ifland.ai/globalpoc"
+            target="_blank"
+            title="ifland(이프랜드) 앱 다운로드 하기"
+            data-lang="ifland.download.btn"
+            >ifland(이프랜드) 앱 다운로드 하기</a
+          >
+          <a
+            class="btn-popup-open hidden-mobile"
+            data-name="bottom-link"
+            data-popup="popupAappDownIfland"
+            id="globalVrDownLink"
+            href="#"
+            title="ifland(이프랜드) 앱 다운로드 하기"
+            data-lang="ifland.download.btn"
+            >ifland(이프랜드) 앱 다운로드 하기</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <div id="popup">
+      <!-- 아바타 리스트 팝업 -->
+      <aside id="popupAvatar" class="popup-wrap">
+        <div class="popup-alert">
+          <header class="popup-header">
+            <button
+              type="button"
+              class="btn-popup-close"
+              data-lang="popup.close"
+            >
+              팝업닫기
+            </button>
+          </header>
+          <section class="popup-body">
+            <!-- download-wrap -->
+            <div class="popup-content-wrap">
+              <h3 data-lang="popup.avatar.title">
+                ifland에서 나만의 이프미를 꾸며보세요
+              </h3>
+              <div class="download-wrap white">
+                <div
+                  class="btn-app-download btn-popup-open hidden-mobile"
+                  data-name="etc-link"
+                  data-popup="popupAappDownIfland"
+                  data-lang="popup.avatar.appdownload"
+                >
+                  앱 다운로드
+                </div>
+                <a
+                  class="btn-app-download hidden-desktop"
+                  data-name="etc-link"
+                  href="https://app.ifland.ai/globalpoc"
+                  target="_blank"
+                  data-lang="popup.avatar.appdownload"
+                  >앱 다운로드</a
+                >
+                <div class="avatar-wrap">
+                  <div class="avatar">
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_01_210630.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_01_210630.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_02_210630.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_02_210630.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_03_210630.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_03_210630.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        class="video-sm"
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_04_210630.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_04_210630.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </div>
+                  <div class="avatar">
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_05_210630.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_05_210630.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_06_210630.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_06_210630.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_07_210630.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_07_210630.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_01_210430.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_01_210430.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </div>
+
+                  <div class="avatar">
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_02_210430.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_02_210430.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_03_210430.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_03_210430.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_04_210430.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source
+                          src="/movie/avatar_04_210430.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_01.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source src="/movie/avatar_01.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
+                  <div class="avatar">
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_02.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source src="/movie/avatar_02.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_03.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source src="/movie/avatar_03.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div class="video-bg">
+                      <video
+                        preload="none"
+                        data-video="jumpvr"
+                        poster="/movie/thumnail/avatar_04.jpg"
+                        onplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        oncanplay="setVideoBgColorDelayed(this,[255,255,255])"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                      >
+                        <source src="/movie/avatar_04.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <!-- 210721 추가 - 홍보배너 팝업 -->
+      <!-- <div class="popup-wrap" id="popupGallery">
+      <div class="popup-gallery">
+        <header class="popup-header">
+          <button type="button" class="btn-popup-close" data-lang="popup.close">팝업닫기</button>
+        </header>
+
+        <div class="popup-body">
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper" >
+              <fiqure class="swiper-slide" th:each="banner : ${bannerList}">
+              	<img th:src="@{${banner.logoUrl}}" th:alt="${banner.title}">
+              </fiqure>
+            </div>
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper" >
+              <fiqure class="swiper-slide" th:each="banner : ${bannerList}">
+                <img th:src="@{${banner.logoUrl}}" th:alt="${banner.title}">
+              </fiqure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+      <!-- 메인 팝업 (이프렌즈 주간일정표)  210831 추가 -->
+      <!-- <aside id="popupBanner" class="popup-wrap is-open" data-popup-id="popup_banner">
+      <div class="popup-banner">
+        <div class="popup-body">
+          <div class="swiper-container swiper-popup-banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/banner/popup/popup_210831_1_ko.png" alt="이프렌즈 주간일정표">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/banner/popup/popup_210831_2_ko.png" alt="이프렌즈 주간일정표">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/banner/popup/popup_210831_3_ko.png" alt="이프렌즈 주간일정표">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/banner/popup/popup_210831_4_ko.png" alt="이프렌즈 주간일정표">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/banner/popup/popup_210831_5_ko.png" alt="이프렌즈 주간일정표">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/banner/popup/popup_210831_6_ko.png" alt="이프렌즈 주간일정표">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/banner/popup/popup_210831_7_ko.png" alt="이프렌즈 주간일정표">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <div class="btn-wrap">
+            <button class="btn-popup-close-cookie" data-lang="popup.close-oneday" data-expired="1">오늘 하루 보지 않기</button>
+            <button class="btn-popup-close" data-lang="popup.close"> 닫기</button>
+          </div>
+        </div>
+      </div>
+    </aside> -->
+
+      <!-- 캘린더 팝업 -->
+      <aside class="popup-wrap" id="popupCalendar">
+        <div class="popup-calendar">
+          <header class="popup-header">
+            <h2 data-lang="ifland.calendar.title">이번달 주요 ifland 모임</h2>
+            <button
+              type="button"
+              class="btn-popup-close"
+              data-lang="popup.close"
+            >
+              팝업닫기
+            </button>
+          </header>
+
+          <div class="popup-body">
+            <div id="calendar" class="calendar-wrap"></div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 공통 팝업 -->
+      <div id="popupCommon"></div>
+    </div>
+
+    <script src="/js/lib/jquery-3.4.1.min.js"></script>
+    <script src="/js/lib/jquery.cookie.min.js"></script>
+    <script src="/js/lib/swiper.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/virtual_meetup.js"></script>
+    <script src="/js/calendar.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        /**---------------------------------------------------------- 
+      * desktop / mobile 체크
+      ---------------------------------------------------------- */
+        //       deviceCheck();
+
+        //     function deviceCheck() {
+        //       var nowWidth = window.innerWidth
+        //       if (mobileCheck() || $(window).width() < 1024) {
+        //         if ($(".header-tit").innerWidth() < $(".header-tit").innerHeight()) {
+        //           videoChange("mobile");
+        //         } else {
+        //           videoChange("desktop");
+        //         }
+        //         // 모바일 모드에 따른 비디오 사이즈 변경
+        //         $(window).resize(function () {
+        //           if (nowWidth !== window.innerWidth) { //width 변화시에만 실행, height 변화는 무시\
+        //             if ($(".header-tit").innerWidth() < $(".header-tit").innerHeight()) {
+        //               videoChange("mobile");
+        //               nowWidth = window.innerWidth
+        //             } else {
+        //               videoChange("desktop");
+        //               nowWidth = window.innerWidth
+        //             }
+        //           }
+        //         });
+
+        //       } else {
+        //         videoChange("desktop");
+        //         $(window).resize(function () {
+        //           location.reload();
+        //           videoChange("desktop");
+        //         });
+
+        //       }
+        //     }
+
+        /**----------------------------
+    * 디바이스에 따른 비디오 URL 변경
+    ------------------------------ */
+        function videoChange(device) {
+          $(".header-movie video").each(function () {
+            var $this = $(this);
+            if (typeof $this.data("video") !== "undefined") {
+              $this.get(0).pause();
+              $this.attr(
+                "poster",
+                "/movie/thumnail/" + $this.data("video") + "_" + device + ".jpg"
+              );
+              $this
+                .children("source")
+                .attr(
+                  "src",
+                  "/movie/" + $this.data("video") + "_" + device + ".mp4"
+                );
+              $this.get(0).load();
+            }
+          });
+        }
+      });
+    </script>
+
+    <!--
+  듀토리얼, calendar 이미지 배너   
+  <script th:inline="javascript">
+	
+  $(document).ready(function () {
+    
+  }); 
+  
+  $(window).on("load", function(){
+	  var imgF = ;
+	    
+	    if(imgF == null || imgF == ''){
+	    	$('.calendar-btn').css("background-image", "url(/img/virtual_meetup/main/calendar_btn_bg_pc.png)");
+	    }else{
+	    	$('.calendar-btn').css("background-image", "url("+imgF+")");	
+	    }
+		
+		var imgT = ;
+	    
+	    if(imgT == null || imgT == ''){
+	    	$('.tutorial').css("background-image", "url(/img/virtual_meetup/main/tutorial_bg_pc.png)");
+	    }else{
+			$('.tutorial').css("background-image", "url("+imgT+")");	
+	    }
+  });
+  </script>
+ -->
+
+    <script type="text/javascript">
+      (function (w, d, a) {
+        w.__beusablerumclient__ = {
+          load: function (src) {
+            var b = d.createElement("script");
+            b.src = src;
+            b.async = true;
+            b.type = "text/javascript";
+            d.getElementsByTagName("head")[0].appendChild(b);
+          },
+        };
+        w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+      })(window, document, "//rum.beusable.net/load/b221107e185922u933");
+    </script>
+  </body>
+</html>
