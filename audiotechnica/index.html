@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Audio-technica store - Always Analogue</title>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/swiper-bundle.js"></script>
-    <style></style>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="allwrap">
@@ -84,24 +84,26 @@
       </header>
       <!-- 헤더끝 -->
       <div class="midwrap">
-        <div class="mainslide">
+        <section class="mainslide">
           <div class="slidebg"></div>
           <div class="mainslide1">
-            <div class="slidetitle">
-              모두를 위한<br />
-              스테레오 턴테이블
-            </div>
-            <div class="slideproduct">
-              <div class="slideleft">
-                <img src="images/AT-LP3XBT.png" alt="" />
+            <div class="slide1wrap">
+              <div class="slidetitle">
+                모두를 위한<br />
+                스테레오 <br />턴테이블
               </div>
-              <ul class="slidedesc">
-                <li class="slidedescsub">
-                  'AT-LP60X BK'<br />
-                  <span>입문형 턴테이블 판매 1위</span>
-                </li>
-                <li class="slidedescmore">SHOP NOW</li>
-              </ul>
+              <div class="slideproduct">
+                <div class="slideimg">
+                  <img src="images/AT-LP3XBT.png" alt="" />
+                </div>
+                <ul class="slidedesc">
+                  <li class="slidedescsub">
+                    'AT-LP60X BK'<br />
+                    <span>입문형 턴테이블 판매 1위</span>
+                  </li>
+                  <li class="slidedescmore">SHOP NOW</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="slideicon">
@@ -109,9 +111,9 @@
               ><img src="images/icon_scrolldown.png" alt="icon_scrolldown"
             /></a>
           </div>
-        </div>
-        <!-- 첫번째슬라이드 끝 -->
-        <div class="mainbox" id="page1">
+        </section>
+        <!-- 첫번째 섹션 끝 -->
+        <section class="mainbox">
           <div class="mainbox1">
             <ul>
               <li class="swiper mySwiper boxleft">
@@ -143,8 +145,10 @@
                           <img src="images/boxright_image01.jpg" alt="" />
                         </div>
                       </li>
-                      <li><h2>ATH-M50XWH 화이트</h2></li>
-                      <li><p>프로페셔널 스튜디오 헤드폰</p></li>
+                      <li class="boxdesc">
+                        <h2>ATH-M50XWH 화이트</h2>
+                        <p>프로페셔널 스튜디오 헤드폰</p>
+                      </li>
                     </ul>
                   </li>
                   <li class="swiper-slide">
@@ -155,8 +159,10 @@
                           <img src="images/boxright_image01.jpg" alt="" />
                         </div>
                       </li>
-                      <li><h2>ATH-M50XWH 화이트22</h2></li>
-                      <li><p>프로페셔널 스튜디오 헤드폰22</p></li>
+                      <li class="boxdesc">
+                        <h2>ATH-M50XWH 화이트22</h2>
+                        <p>프로페셔널 스튜디오 헤드폰22</p>
+                      </li>
                     </ul>
                   </li>
                   <li class="swiper-slide">
@@ -167,8 +173,10 @@
                           <img src="images/boxright_image01.jpg" alt="" />
                         </div>
                       </li>
-                      <li><h2>ATH-M50XWH 화이트33</h2></li>
-                      <li><p>프로페셔널 스튜디오 헤드폰33</p></li>
+                      <li class="boxdesc">
+                        <h2>ATH-M50XWH 화이트33</h2>
+                        <p>프로페셔널 스튜디오 헤드폰33</p>
+                      </li>
                     </ul>
                   </li>
                   <li class="swiper-slide">
@@ -179,8 +187,10 @@
                           <img src="images/boxright_image01.jpg" alt="" />
                         </div>
                       </li>
-                      <li><h2>ATH-M50XWH 화이트44</h2></li>
-                      <li><p>프로페셔널 스튜디오 헤드폰44</p></li>
+                      <li class="boxdesc">
+                        <h2>ATH-M50XWH 화이트44</h2>
+                        <p>프로페셔널 스튜디오 헤드폰44</p>
+                      </li>
                     </ul>
                   </li>
                   <li class="swiper-slide">
@@ -191,8 +201,10 @@
                           <img src="images/boxright_image01.jpg" alt="" />
                         </div>
                       </li>
-                      <li><h2>ATH-M50XWH 화이트55</h2></li>
-                      <li><p>프로페셔널 스튜디오 헤드폰55</p></li>
+                      <li class="boxdesc">
+                        <h2>ATH-M50XWH 화이트55</h2>
+                        <p>프로페셔널 스튜디오 헤드폰55</p>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -202,63 +214,7 @@
               </li>
             </ul>
           </div>
-          <script>
-            $(function () {
-              $(".boxright").css({ marginLeft: "100px" });
-              $(".boxright .swiper-slide .title").css({ opacity: "0" });
-              $(".boxright .swiper-slide")
-                .eq(0)
-                .find(".title")
-                .css({ opacity: "1" });
-              var swiper_left = new Swiper(".boxleft", {
-                slidesPerView: "auto",
-                spaceBetween: 0,
-                loop: true,
-                on: {
-                  slideChange: function () {
-                    //swiper_left.controller.control = swiper4;
-                  },
-                  // slideChangeTransitionStart: function () {
-                  //   console.log(this.realIndex);
-                  //   swiper_left.controller.control = swiper4;
-                  // },
-                },
-              });
-              var hasExecuted = false;
-              var swiper4 = new Swiper(".boxright", {
-                speed: 1000,
-                slidesPerView: "auto",
-                spaceBetween: 30,
-                loop: true,
-                //slidesOffsetBefore: 100,
-                on: {
-                  slideChange: function () {
-                    $(".boxright .swiper-slide .title").css({ opacity: "0" });
-                    $(".boxright .swiper-slide")
-                      .eq(this.activeIndex)
-                      .find(".title")
-                      .css({ opacity: "1" });
-                    //swiper4.controller.control = swiper_left;
-                  },
-                  // slideChangeTransitionStart: function () {
-                  //   console.log(this.realIndex);
-                  //   swiper4.controller.control = swiper_left;
-                  // },
-                },
-                navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
-                scrollbar: {
-                  el: ".swiper-scrollbar",
-                  hide: false,
-                },
-              });
-              swiper4.controller.control = swiper_left;
-              swiper_left.controller.control = swiper4;
-            });
-          </script>
-        </div>
+        </section>
         <!-- 박스형 섹션 끝 -->
 
         <div class="events">
@@ -292,7 +248,7 @@
           <a href="#" class="eventmore"> + </a>
         </div>
 
-        <!--  -->
+        <!-- 이벤트 섹션 끝 -->
         <div class="product">
           <h1>PRODUCT</h1>
           <ul>
