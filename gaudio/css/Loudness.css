@@ -1,3 +1,8 @@
+.allwrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
 .loudwrap {
   width: 100vw;
   height: 100vh;
@@ -59,50 +64,7 @@
     animation-timing-function: ease-out;
   }
 }
-.expnav {
-  display: flex;
-  width: 70%;
-  max-width: 1440px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  position: absolute;
-  bottom: 4vh;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
-}
-.expnav ul {
-  display: flex;
-  height: 40px;
-  background-color: #999;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-}
-.expnav ul li {
-  margin: 0 20px;
-  color: #ccc;
-  line-height: 40px;
-  font-weight: bold;
-  font-family: "NotoSansKR", sans-serif;
-  font-size: 15px;
-}
-.expnav ul li a {
-  color: #ccc;
-  font-weight: bold;
-  font-family: "NotoSansKR", sans-serif;
-  font-size: 15px;
-  transition: 0.5s;
-  line-height: 40px;
-}
-.expnav ul li .loudnav {
-  color: #fff;
-}
-.expnav > p {
-  color: #000;
-}
+
 .loudwrap2 {
   width: 100vw;
   height: 100vh;
@@ -130,7 +92,7 @@
 .titlewrap2 {
   width: 100%;
   position: relative;
-  scale: 0.6;
+  scale: 0.8;
 }
 .titlewrap2 > p {
   font-size: 24px;
@@ -251,4 +213,51 @@
 }
 .barright div {
   background-color: cadetblue;
+}
+.expnav {
+  display: flex;
+  width: 70%;
+  max-width: 1440px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+  z-index: 1000;
+}
+.expnav ul {
+  display: flex;
+  height: 40px;
+  background-color: #999;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.expnav ul li {
+  margin: 0 20px;
+  color: #ccc;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: "NotoSansKR", sans-serif;
+  font-size: 15px;
+}
+.expnav ul li a {
+  color: #ccc;
+  font-weight: bold;
+  font-family: "NotoSansKR", sans-serif;
+  font-size: 15px;
+  transition: 0.5s;
+  line-height: 40px;
+}
+.expnav ul li .loudnav {
+  color: #fff;
+}
+.expnav > p {
+  color: #000;
 }

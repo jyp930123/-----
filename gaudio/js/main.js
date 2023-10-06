@@ -179,4 +179,29 @@ $(function () {
   for (let i = 0; i < 40; i++) {
     $(".barright div").eq(i).css("animationDelay", dlb[i]);
   }
+
+  let el = $("section");
+  $(el).each(function (index) {
+    $(this).on("mousewheel", function () {
+      console.log(event.wheelDelta);
+      let moveTop = $(window).scrollTop();
+      let eleseclector = $(el).eq(index);
+      if (event.wheelDelta < 0) {
+        if ($(eleseclector).next() != undefined) {
+          try {
+            moveTop = $(eleseclector).next().offset().top;
+          } catch (e) {}
+        }
+      } else {
+        if ($(eleseclector).prev() != undefined) {
+          try {
+            moveTop = $(eleseclector).prev().offset().top;
+          } catch (e) {}
+        }
+      }
+      $("html,body")
+        .stop()
+        .animate({ scrollTop: moveTop + "px" }, 500);
+    });
+  });
 });
