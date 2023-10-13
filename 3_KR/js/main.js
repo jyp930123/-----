@@ -1,10 +1,10 @@
 $(function () {
   let subMenu = document.querySelector(".submenu");
-  let sub = document.querySelectorAll(".lnb > ul > li");
-  let gnb = document.querySelectorAll(".gnb ul li a");
-  let ht = document.querySelector(".lnb").offsetHeight;
+  let sub = document.querySelectorAll(".KRlnb > ul > li");
+  let KRgnb = document.querySelectorAll(".KRgnb ul li a");
+  let ht = document.querySelector(".KRlnb").offsetHeight;
   let status = true;
-  gnb.forEach(function (item, keys) {
+  KRgnb.forEach(function (item, keys) {
     item.onclick = function () {
       if (status) {
         subMenu.style.height = ht + 90 + "px";
@@ -16,10 +16,10 @@ $(function () {
   });
   sub.forEach(function (item, keys) {
     item.addEventListener("click", function () {
-      gnb[keys].classList.add("on", "active");
+      KRgnb[keys].classList.add("on", "active");
     });
     item.addEventListener("mouseleave", function () {
-      gnb[keys].classList.remove("on", "active");
+      KRgnb[keys].classList.remove("on", "active");
     });
   });
 

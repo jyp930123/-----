@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/swiper-bundle.css" />
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style2_slide.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/darkmode.css" />
     <title>한국기업평가-Korea Ratings</title>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/swiper-bundle.js"></script>
@@ -18,7 +19,7 @@
         <h1 id="mainlogo">
           <a href="#"><img src="images/mainlogo.png" alt="mainlogo" /></a>
         </h1>
-        <div class="gnb">
+        <div class="KRgnb">
           <ul>
             <li><a href="#">등급공시</a></li>
             <li><a href="#">리서치</a></li>
@@ -43,12 +44,12 @@
           </li>
         </ul>
         <div class="submenu">
-          <div class="lnb">
+          <div class="KRlnb">
             <ul>
               <li>
-                <p class="lnbtitle">등급공시</p>
+                <p class="KRlnbtitle">등급공시</p>
                 <ul>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     등급속보
                     <ul class="plus">
                       <li>신용등급공시</li>
@@ -61,7 +62,7 @@
                     </ul>
                   </li>
                   <li>등급검색</li>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     등급통계
                     <ul class="plus">
                       <li>등급별통계</li>
@@ -73,7 +74,7 @@
                       <li>금리&스프레드</li>
                     </ul>
                   </li>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     자산유동화증권(SF)
                     <ul class="plus">
                       <li>유효등급 List</li>
@@ -84,9 +85,9 @@
                 </ul>
               </li>
               <li>
-                <p class="lnbtitle">리서치</p>
+                <p class="KRlnbtitle">리서치</p>
                 <ul>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     KR Research
                     <ul class="plus">
                       <li>전체</li>
@@ -104,9 +105,9 @@
                 </ul>
               </li>
               <li>
-                <p class="lnbtitle">평가자료실</p>
+                <p class="KRlnbtitle">평가자료실</p>
                 <ul>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     평가방법론
                     <ul class="plus">
                       <li>평가방법론 개정</li>
@@ -119,10 +120,10 @@
                 </ul>
               </li>
               <li>
-                <p class="lnbtitle">기업재무정보</p>
+                <p class="KRlnbtitle">기업재무정보</p>
                 <ul>
                   <li>기업종합개요</li>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     기업현황
                     <ul class="plus">
                       <li>기업체개요</li>
@@ -136,12 +137,12 @@
                 </ul>
               </li>
               <li>
-                <p class="lnbtitle">평가문의</p>
+                <p class="KRlnbtitle">평가문의</p>
                 <ul>
                   <li>신용평가소개</li>
                   <li>등급정의안내</li>
                   <li>주요평가요소</li>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     평가종류
                     <ul class="plus">
                       <li>회사채 평가</li>
@@ -165,9 +166,9 @@
                 </ul>
               </li>
               <li>
-                <p class="lnbtitle">ESG</p>
+                <p class="KRlnbtitle">ESG</p>
                 <ul>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     ESG 인증평가
                     <ul class="plus">
                       <li>ESG 인증평가소개</li>
@@ -185,9 +186,9 @@
                 </ul>
               </li>
               <li>
-                <p class="lnbtitle">사업가치평가</p>
+                <p class="KRlnbtitle">사업가치평가</p>
                 <ul>
-                  <li class="lnbmore">
+                  <li class="KRlnbmore">
                     평가안내
                     <ul class="plus">
                       <li>사업가치평가 소개</li>
@@ -216,15 +217,28 @@
             id="sidepanel"
           />
         </div>
-        <div class="displaymode_dark_bgwrap">
-          <img
-            src="images/ico-darkmode.png"
-            alt="displaymode_dark"
-            id="displaymode_dark"
-          />
+        <div class="displaymode_bgwrap">
+          <button onclick="darkMode()" id="dmbutton">
+            <!-- <img src="images/ico-darkmode.png" /> -->
+          </button>
         </div>
       </div>
-
+      <script>
+        let button = document.getElementById("dmbutton");
+        let status = true;
+        button.innerHTML = '<img src="images/ico-darkmode.png" />';
+        function darkMode() {
+          let body = document.body;
+          body.classList.toggle("dark-mode");
+          let button = document.getElementById("dmbutton");
+          if (status) {
+            button.innerHTML = '<img src="images/ico-lightmode.png" />';
+          } else {
+            button.innerHTML = '<img src="images/ico-darkmode.png" />';
+          }
+          status = !status;
+        }
+      </script>
       <section class="mainpage mpone">
         <div class="search-group">
           <div class="input-group">
@@ -309,6 +323,15 @@
                 </p></a
               >
             </li>
+            <li>
+              <a href="#"
+                ><div class="boxbg bbgray newbox">
+                  <img src="images/ico-quick-recruit.png" alt="" />
+                  <p class="new">New</p>
+                </div>
+                <p>채용공고</p></a
+              >
+            </li>
           </ul>
         </div>
         <p class="scroll-down">
@@ -355,7 +378,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-11</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -374,7 +397,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-11</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -393,7 +416,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-10</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -412,7 +435,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-08</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -433,7 +456,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-07</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -452,7 +475,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-07</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -471,7 +494,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-06</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -490,7 +513,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-05</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -509,7 +532,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-04</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -528,7 +551,7 @@
               <td>A+(안정적)</td>
               <td class="prev"></td>
               <td>A+(안정적)</td>
-              <td>2023-08-11</td>
+              <td>2023-10-03</td>
               <td>
                 <a href="#"
                   ><img src="images/평가의견 다운로드.png" alt=""
@@ -563,15 +586,16 @@
           <div class="item">
             <div class="box">
               <ul>
-                <li>Special Comment</li>
+                <li>등급변동요인/금융 재무자료</li>
                 <li>
                   <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
                 </li>
               </ul>
               <h1 class="boxtitle">
-                [한화그룹분석보고서] 확장에서 정비로의 전략 전환 필요
+                KR 등급변동요인 현황<br />
+                (2023.10.01 기준)
               </h1>
-              <span class="date">2023.08.21</span>
+              <span class="date">2023.10.13</span>
             </div>
           </div>
           <div class="item">
@@ -582,42 +606,35 @@
                   <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
                 </li>
               </ul>
-              <h1 class="boxtitle">
-                그룹의 확장 투자전략,재무부담 감내 여부는 반도체와 배터리개선
-                실적에 달렸다.
-              </h1>
-              <span class="date">2023.08.21</span>
+              <h1 class="boxtitle">엘에스일렉트릭의 등급변동요인 변경</h1>
+              <span class="date">2023.10.11</span>
             </div>
           </div>
           <div class="item">
             <div class="box">
               <ul>
-                <li>Special Comment</li>
+                <li>등급변동요인/금융 재무자료</li>
                 <li>
                   <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
                 </li>
               </ul>
-              <h1 class="boxtitle">
-                한화오션의 유상증자에 대한 KR의 견해 - 한화오션 재무부담 재차
-                완화, 신용도 개선에는 본원적 이익이 막대한 영향
-              </h1>
-              <span class="date">2023.08.21</span>
+              <h1 class="boxtitle">[Data Sheet]부동산 신탁 재무자료_2023.2Q</h1>
+              <span class="date">2023.10.05</span>
             </div>
           </div>
           <div class="item">
             <div class="box">
               <ul>
-                <li>Special Comment</li>
+                <li>RatingAction&Forward Looking</li>
                 <li>
                   <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
                 </li>
               </ul>
               <h1 class="boxtitle">
-                '자산유동화에 관한 법률'하위법령 개정안 입법예고-자금조달주체의
-                위험보유규제는 어떻게 구체화되었나?, - 유동화시장에 미치는
-                영향은?
+                에이치디현대일렉트로닉의 등급전망<br />
+                '긍정적'으로 변경:A-(S) → A-(P)
               </h1>
-              <span class="date">2023.08.21</span>
+              <span class="date">2023.10.01</span>
             </div>
           </div>
         </div>
@@ -636,50 +653,48 @@
               <tr>
                 <td>Special Comment</td>
                 <td>
-                  쌍용씨앤이의 쌍용레미콘 지분 및 토지 처분에 따른 신용도 영향
-                  제한적-매각대금 차입금 상환 재원으로 사용 에정으로 재무구조
-                  개선 전망,-레미콘 사업부문...
+                  에이케이에스앤디의 수원애경역사 흡수합병 계획이 수원애경역사
+                  회사채 신용도에 끼치는 영향 제한적일 전망 - 합병법인의
+                  실적안정성 및 재무구조 유지 여부를 모니터링할 예정
                 </td>
-                <td>2023.08.03</td>
+                <td>2023.10.05</td>
                 <td>
                   <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
                 </td>
                 <td></td>
               </tr>
               <tr>
-                <td>Special Comment</td>
+                <td>Issue Report</td>
                 <td>
-                  쌍용씨앤이의 쌍용레미콘 지분 및 토지 처분에 따른 신용도 영향
-                  제한적-매각대금 차입금 상환 재원으로 사용 에정으로 재무구조
-                  개선 전망,-레미콘 사업부문...
+                  턴어라운드 허들 넘어선 조선 Big 4, 잔존 리스크는? - 중기 실적
+                  우상향 여건 조성, 공정 안정화와 운전자본 관리가 과제
                 </td>
-                <td>2023.08.03</td>
-                <td>
-                  <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Special Comment</td>
-                <td>
-                  쌍용씨앤이의 쌍용레미콘 지분 및 토지 처분에 따른 신용도 영향
-                  제한적-매각대금 차입금 상환 재원으로 사용 에정으로 재무구조
-                  개선 전망,-레미콘 사업부문...
-                </td>
-                <td>2023.08.03</td>
+                <td>2023.09.27</td>
                 <td>
                   <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
                 </td>
                 <td></td>
               </tr>
               <tr>
-                <td>Special Comment</td>
+                <td>Issue Report</td>
+                <td>
+                  금융업권 부동산PF 리스크 점검 Ⅲ(캐피탈) - 끝나지 않은 부동산PF
+                  리스크, 지난 1년 그리고 다가올 1년
+                </td>
+                <td>2023.09.26</td>
+                <td>
+                  <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Issue Report</td>
                 <td>
                   쌍용씨앤이의 쌍용레미콘 지분 및 토지 처분에 따른 신용도 영향
                   제한적-매각대금 차입금 상환 재원으로 사용 에정으로 재무구조
                   개선 전망,-레미콘 사업부문...
                 </td>
-                <td>2023.08.03</td>
+                <td>2023.09.20</td>
                 <td>
                   <img src="images/평가의견 다운로드.png" alt="" class="pdf" />
                 </td>
@@ -711,120 +726,105 @@
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >1111111교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >중진공2023제2차스케일업유동화전문(유)_ESG인증평가
+                        보고서</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.28</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >2222222교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >농협은행(주)_농업금융채권(은행)2023-09이3Y-G(사)_ESG인증평가
+                        보고서</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.19</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >333333333교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >부산바이오가스(주)_ESG인증평가 보고서_공시용</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.17</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >44444444교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >서울교통공사_제2023-2회 한국형 녹색채권_사전외부검토
+                        보고서_최종본</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.16</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >5555555교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >평택도시공사_제2023-06회(사)_공모채권_사회적채권_본
+                        평가_S1</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.12</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >666666666교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >(주)신한은행_26-08-이-1-A(녹)_공모채권_녹색채권_정기평가_적합</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.11</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >777777777교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >우리금융지주_ESG인증평가 보고서</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.09</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >88888888교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >부산바이오가스_ESG인증평가 보고서_공시용</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.06</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >9999999교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >부산교통공사_제2023-7회_공모채권_녹색채권_본평가_적합</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.03</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >000000000교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >(주)한화_한국형 녹색채권 관리체계_사전 외부검토
+                        보고서_적합</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.02</span>
                   </div>
                 </div>
               </div>
@@ -857,120 +857,102 @@
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >신재생에너지 투자에 미치는 영향 점검</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.10.11</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >전력시장변화가 발전에너지 <br />투자에미치는영향점검</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.10.11</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >제10차 전력수급기본계획의 주요사항</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.10.09</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >국내 데이터센터 산업은 누가 움직이는가</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.10.07</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >생활형숙박시설 주요 이슈와 시사점</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.10.02</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >상품별 부동산 프로젝트 파이낸싱 시장 2022년 리뷰 및
+                        2023년 전망</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.10.01</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >탄소중립 달성을 위한 기술 / 산업 : CCUS</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.29</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >통신산업 Deal Trend 및 투자포인트 분석</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.23</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >인터넷 전문은행과 전통 상업은행의 평가방법론 및 가치
+                        차이에 대한 연구</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.21</span>
                   </div>
                 </div>
                 <div class="swiper-slide item2">
                   <div class="box2">
                     <h1 class="boxtitle2">
                       <a href="#" class="txt_line5"
-                        >교보생명보험(주)_외화
-                        신종자본증권_공모채권_지속가능채권_사후보고 인증평가(본
-                        평가)_5억USD(50,000만$)_ST1</a
+                        >한국시장 Risk Premium 산정</a
                       >
                     </h1>
-                    <span class="date">2023.08.21</span>
+                    <span class="date">2023.09.21</span>
                   </div>
                 </div>
               </div>
@@ -996,7 +978,7 @@
                 홈페이지 시스템 점검이 있습니다. 점검 시간 중에는 홈페이지를
                 사용하실수 없으니, 서비스 점검시간을 확인하시기 바랍니다.
               </p>
-              <p>2023-08-14</p>
+              <p>2023-10-13</p>
             </li>
             <li>
               <a href="">
@@ -1007,7 +989,7 @@
                 당사 정관 제16조 및 제53조에 의거하여 아래와 같이 분기배당
                 기준일을 공고합니다.
               </p>
-              <p>2023-06-08</p>
+              <p>2023-10-09</p>
             </li>
             <li>
               <a href="">
@@ -1018,7 +1000,7 @@
                 위한 일반경쟁입찰 실시(입찰기준 사양은 첨부된 입찰안내서 파일
                 참조)
               </p>
-              <p>2023-06-07</p>
+              <p>2023-10-01</p>
             </li>
           </ul>
         </div>

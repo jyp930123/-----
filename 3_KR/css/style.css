@@ -57,7 +57,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 header {
   position: fixed;
   width: 100%;
@@ -77,18 +76,18 @@ header {
   height: 30px;
   shape-rendering: auto;
 }
-.gnb {
+.KRgnb {
   width: 800px;
   display: inline-block;
 }
-.gnb > ul {
+.KRgnb > ul {
   width: 800px;
   height: 78px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.gnb > ul > li {
+.KRgnb > ul > li {
   letter-spacing: -1px;
   font-size: 19px;
   font-weight: 500;
@@ -97,17 +96,17 @@ header {
   line-height: 78px;
   text-align: center;
 }
-.gnb ul li a {
+.KRgnb ul li a {
   position: relative;
   display: block;
 }
-.gnb ul li a:hover,
-.gnb ul li a.on {
+.KRgnb ul li a:hover,
+.KRgnb ul li a.on {
   color: #1826a2;
 }
 
-.gnb ul li a:hover::after,
-.gnb ul li a.active::after {
+.KRgnb ul li a:hover::after,
+.KRgnb ul li a.active::after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -143,20 +142,20 @@ header {
   display: block;
   transition: 0.3s;
 }
-.submenu > .lnb {
+.submenu > .KRlnb {
   width: 75%;
   min-width: 1080px;
   margin: 0 auto;
 }
-.submenu > .lnb > ul {
+.submenu > .KRlnb > ul {
   display: flex;
   margin: 0 auto;
   justify-content: space-evenly;
 }
-.submenu > .lnb > ul > li {
+.submenu > .KRlnb > ul > li {
   max-width: 150px;
 }
-.lnbtitle {
+.KRlnbtitle {
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -169,12 +168,13 @@ header {
   display: inline-block;
   transform: translateX(-25px);
 }
-.submenu > .lnb > ul > li > ul > li {
+.submenu > .KRlnb > ul > li > ul > li {
   margin-top: 19px;
   font-size: 17px;
+  cursor: pointer;
 }
 
-.lnbmore {
+.KRlnbmore {
   position: relative;
 }
 .plus {
@@ -187,11 +187,14 @@ header {
   left: 10px;
 }
 .plus::before {
-  content: "";
+  content: "+";
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
   display: block;
-  width: 17px;
-  height: 17px;
-  background: url(../images/bg-mm-plus.svg) 50% 50% no-repeat;
+  width: 18px;
+  height: 18px;
+  color: #5b60a5;
   border: 1px solid #5b60a5;
   border-radius: 4px;
   position: absolute;
@@ -224,12 +227,12 @@ header {
   height: 28px;
   padding-bottom: 5px;
 }
-.inner {
+/* .inner {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
-}
+} */
 .coachmark_bgwrap {
   position: fixed;
   width: 40px;
@@ -244,6 +247,7 @@ header {
   cursor: pointer;
   transition: 0.2s;
   scale: 1;
+  z-index: 1000;
 }
 .coachmark_bgwrap:hover {
   scale: 1.1;
@@ -252,6 +256,7 @@ header {
   width: 25px;
   height: 25px;
   filter: invert(100%);
+  z-index: 1000;
 }
 .sidepanel_bgwrap {
   position: fixed;
@@ -265,8 +270,9 @@ header {
   top: 450px;
   right: 25px;
   cursor: pointer;
+  z-index: 1000;
 }
-.displaymode_dark_bgwrap {
+.displaymode_bgwrap {
   position: fixed;
   width: 50px;
   height: 52px;
@@ -278,12 +284,16 @@ header {
   bottom: 27px;
   left: 20px;
   cursor: pointer;
+  z-index: 1000;
 }
-#displaymode_dark {
+#dmbutton {
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
 }
 .mainpage {
   width: 100%;
-  height: 963px;
+  height: 100vh;
   display: flex;
 }
 .mpone {
@@ -460,6 +470,34 @@ header {
 .mpone .bbgray {
   background: #ddd;
 }
+.mpone .newbox {
+  position: relative;
+}
+.mpone .new {
+  padding: 3px 6px;
+  background-color: #f9558d;
+  border-radius: 3px;
+  color: #fff;
+  letter-spacing: 0;
+  font-size: 0.6rem;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.mpone .new::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 5px solid #f9558d;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(90deg);
+  z-index: -1;
+}
 .mpone .boxicons > ul > li > a > .boxbg:hover {
   scale: 1.2;
 }
@@ -527,8 +565,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 78px 0 0 0;
-  height: 885px;
+  margin-top: 78px;
+  height: 100vh;
 }
 
 .mptitle {
@@ -657,6 +695,7 @@ header {
 }
 
 .mpthree {
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -833,12 +872,13 @@ header {
 }
 .mpthreebottom table tbody tr td:first-child {
   border-left: 3px solid transparent;
-  text-align: left;
+
   cursor: pointer;
 }
 .mpthreebottom table tbody tr td:nth-child(2) {
   color: #4a5ec1;
   overflow: hidden;
+  text-align: left;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -869,11 +909,42 @@ header {
 .mpfour {
   background: #fff;
   align-items: center;
-  height: 885px;
+  height: 100vh;
   margin-top: 78px;
   overflow: hidden;
+  position: relative;
+}
+.dragcoach {
+  font-size: 12px;
+  padding: 5px 10px;
+  color: #fff;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #aaa;
+  z-index: 1000;
+  right: 400px;
+  bottom: 200px;
+  animation: bounce 1.5s ease-in-out infinite;
+  cursor: default;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
 }
 .mpfourleft {
+  position: relative;
   padding: 48px 80px 0 115px;
   width: 30%;
   height: 100%;
@@ -884,8 +955,8 @@ header {
     rgba(255, 255, 255, 1) 85%,
     rgba(255, 255, 255, 0) 100%
   );
-  position: relative;
-  z-index: 100;
+  /* position: relative; */
+  z-index: 90;
 }
 .esgmore {
   background-color: transparent;
@@ -923,44 +994,25 @@ header {
 .esgmore:focus {
   padding-right: 20px;
 }
-.mpfourright {
+.right-swiper {
+  width: 70%;
+  height: 100%;
   position: relative;
 }
-.mpfourright > p {
-  font-size: 12px;
-  padding: 5px 10px;
-  color: #fff;
-  position: absolute;
-  border-radius: 50px;
-  background-color: #aaa;
-  z-index: 100;
-  right: 400px;
-  bottom: -60px;
-  animation: bounce 1.5s ease-in-out infinite;
-  cursor: default;
+.right-swiper .inner {
+  padding-top: 300px;
 }
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
+.mpfourright {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
 
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-}
-.mpfourslick {
-  width: 70%;
-  display: flex;
-  flex-wrap: nowrap;
-}
-.item2 {
+.mySwiper5 .swiper-slide {
   width: 300px;
   height: 360px;
   border: 1px solid transparent;
@@ -972,13 +1024,13 @@ header {
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
-  margin-right: 70px;
-  scale: 1;
+  transform: scale(1);
 }
-.item2:hover {
+.mySwiper5 .swiper-slide:hover {
   color: #fff;
+  border-radius: 20px;
   background: #2d36a2;
-  scale: 1.2;
+  transform: scale(1.1);
 }
 .item2:hover .txt_line5 {
   color: #fff;
@@ -1006,11 +1058,13 @@ header {
 .mpfive {
   background: #f4f5fc;
   align-items: center;
-  height: 885px;
+  height: 100vh;
   margin-top: 78px;
   overflow: hidden;
+  position: relative;
 }
 .mpfiveleft {
+  position: relative;
   padding: 48px 80px 0 115px;
   width: 30%;
   height: 100%;
@@ -1018,17 +1072,17 @@ header {
   align-items: center;
   background: linear-gradient(
     to right,
-    rgb(244, 245, 252, 1) 85%,
+    rgba(244, 245, 252, 1) 85%,
     rgba(244, 245, 252, 0) 100%
   );
-  position: relative;
-  z-index: 100;
+  z-index: 90;
+}
+.mpfiveleft ul .mptitle {
 }
 .mpfiveright {
-  width: 70%;
-  display: flex;
-  flex-wrap: nowrap;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
 }
 .mpfiveright > p {
   font-size: 12px;
@@ -1046,7 +1100,7 @@ header {
 .mpsix {
   justify-content: center;
   align-items: center;
-  height: 885px;
+  height: 100vh;
   margin-top: 78px;
 }
 .mpsixinner {

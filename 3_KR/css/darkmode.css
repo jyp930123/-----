@@ -1,0 +1,183 @@
+.dark-mode {
+  background-color: #323248;
+  color: #fff;
+}
+.dark-mode header {
+  background-color: #323248;
+  color: #fff;
+}
+.dark-mode header img {
+  filter: brightness(100);
+}
+.dark-mode #headicons > li {
+  color: #fff;
+}
+.dark-mode #headicons > li:hover {
+  background-color: #1a1a25;
+}
+.dark-mode .KRgnb ul li a {
+  color: #fff;
+}
+.dark-mode .submenu {
+  background-color: #656587;
+}
+.dark-mode .coachmark_bgwrap {
+  background: #434ca3;
+}
+.dark-mode .sidepanel_bgwrap {
+  background: #2970ff;
+}
+.dark-mode .displaymode_bgwrap {
+  background: #fff;
+}
+.dark-mode .plus::before {
+  border-color: #1a1a25;
+  color: #1a1a25;
+  background-color: #ededed;
+}
+.dark-mode .plus li {
+  color: #ccc;
+}
+.dark-mode .plus li:hover {
+  color: #fff;
+}
+.dark-mode .boxbg {
+  background-color: #1e1e30;
+}
+.dark-mode .bbgray {
+  background-color: #1d1d2a;
+}
+.dark-mode .boxicons p {
+  color: #ccc;
+}
+.dark-mode .input-group {
+  border-color: #fff;
+  background-color: #323248;
+}
+.dark-mode .input-group:hover {
+  box-shadow: none;
+}
+.dark-mode .inputsearch {
+  background-color: #323248;
+}
+.dark-mode .totalsearch {
+  color: #fff;
+}
+.dark-mode .tribtn {
+  border-top: 4px solid #fff;
+}
+.dark-mode .innerbtn {
+  background-color: #fff;
+  border-color: #fff;
+}
+.dark-mode .innerbtn:hover {
+  box-shadow: none;
+}
+.dark-mode .innerbtn img {
+  filter: invert(70%);
+}
+.dark-mode .trophy-btn:hover {
+  background-color: #777;
+  box-shadow: 0px 0px 0px 4px #aaa;
+}
+
+.dark-mode .scroll-down b {
+  background-color: #ddd;
+}
+.dark-mode .scroll-down r {
+  background-color: #323248;
+}
+.dark-mode .ranking > label {
+  color: #ddd;
+}
+.dark-mode .ranking-name {
+  color: #ddd;
+}
+.dark-mode .mptitle {
+  color: #eee;
+}
+.dark-mode .mpsubmenu li a:hover {
+  color: #eee;
+}
+.dark-mode .mptwo table tbody tr:hover {
+  box-shadow: transparent;
+}
+.dark-mode .mptwo table tbody tr:hover td {
+  border-color: transparent;
+  color: #000;
+}
+.dark-mode .mptwo table tbody tr:hover td:first-child {
+  border-color: transparent;
+  color: #8c9eff;
+}
+.dark-mode .item {
+  background: #4d4d65;
+}
+.dark-mode .item:hover {
+  background: #4d4d65;
+}
+.dark-mode .item > .box > ul > li:first-child {
+  color: #fff;
+  border: 1px solid #fff;
+  background: #4d4d65;
+}
+.dark-mode .item > .box > ul > li:last-child {
+  filter: brightness(100);
+}
+.dark-mode .mpthreebottom table tbody tr:hover {
+  box-shadow: transparent;
+}
+.dark-mode .mpthreebottom table tbody tr:hover td:nth-child(2) {
+  border-color: transparent;
+  color: #8c9eff;
+}
+.dark-mode .mpthreebottom table tbody tr:hover td {
+  border-color: transparent;
+  color: #000;
+}
+.dark-mode .mpfour {
+  background: #323248;
+}
+
+.dark-mode .mpfourleft {
+  background: linear-gradient(
+    to right,
+    rgba(50, 50, 72, 1) 85%,
+    rgba(50, 50, 72, 0) 100%
+  );
+}
+.dark-mode .esgmore a {
+  color: #fff;
+}
+.dark-mode .esgmore::before,
+.dark-mode .esgmore::after {
+  background-color: #fff;
+}
+.dark-mode .mySwiper5 .swiper-slide {
+  background: #4d4d65;
+}
+.dark-mode .mySwiper5 .swiper-slide .txt_line5 {
+  color: #fff;
+}
+.dark-mode .mpfive {
+  background: #323248;
+}
+.dark-mode .mpfiveleft {
+  background: linear-gradient(
+    to right,
+    rgba(50, 50, 72, 1) 85%,
+    rgba(50, 50, 72, 0) 100%
+  );
+}
+.dark-mode .mpsix h3 {
+  color: #fff;
+}
+.dark-mode .mpsixright {
+  border-top: 2px solid #fff;
+}
+.dark-mode .mpsixright li {
+  border-bottom: 2px solid #fff;
+}
+.dark-mode footer {
+  background-color: #2f2f3b;
+}
