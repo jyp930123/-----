@@ -17,25 +17,105 @@ ul {
 
 a {
   text-decoration: none;
-  color: #555;
+  color: #fff;
 }
 body {
   margin: 0;
   padding: 0;
-  height: 5000px;
+  height: 100vh;
+  min-height: 800px;
   font-family: "NotoSansKR", Roboto, sans-serif;
+  position: relative;
 }
-.noisebg {
+/* .noisebg {
   background-color: rgb(255, 255, 255);
   opacity: 0.4;
   position: fixed;
   z-index: -100;
-}
+} */
 .main {
-  text-align: center;
 }
-.contentbox {
+/* .contentbox {
   width: 300px;
   height: 300px;
   background-color: cornflowerblue;
+} */
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* top: calc(50% - 273px);
+  left: calc(50% - 105px);
+  transform: translate(-50%, -50%); */
+}
+/* .box1 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background: #000;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box2 {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  background: transparent;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  top: calc(50% - 26px);
+  left: calc(50% + 26px);
+  transform: translate(-50%, -50%);
+}
+.box3 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  background: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  top: calc(50% - 51px);
+  left: calc(50% + 51px);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+} */
+.charactor {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 36%;
+  left: 43.5%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.contents {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+li {
+  font-size: 12px;
+  margin: 0 1vw;
+  width: 6vw;
+  min-width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+}
+li:hover {
+  background-color: mediumslateblue;
 }
